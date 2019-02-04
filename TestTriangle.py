@@ -9,8 +9,8 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 
 import unittest
 
+import Triangle
 from Triangle import classifyTriangle
-
 # This code implements the unit test functionality
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
 
@@ -23,8 +23,9 @@ class TestTriangles(unittest.TestCase):
     def testRightTriangleB(self): 
         self.assertEqual(classifyTriangle(5,3,4),'Right','5,3,4 is a Right triangle')
         
-    def testEquilateralTriangles(self): 
-        self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
+    def testEquilateralTriangles(self):
+        a=b=c=3
+        self.assertEqual(classifyTriangle(a,b,c),'Equilateral','1,1,1 should be equilateral')
 
 if __name__ == '__main__':
     print('Running unit tests')
