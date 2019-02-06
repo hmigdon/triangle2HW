@@ -5,3 +5,5 @@ python:
 # command to run tests
 script:
  - python -m unittest TestTriangle
+
+[![build status of master](https://travis-ci.org/hmigdon/triangle2HW.svg?branch=master)](https://travis-ci.org/hmigdon/triangle2HW)
